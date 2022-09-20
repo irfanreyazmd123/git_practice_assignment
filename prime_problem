@@ -1,7 +1,8 @@
-function primecheck(num){
+function primecheck(number){
     let factor =0;
-    for(let i=1; i<=num; i++){
-        if(num%i==0){
+    for(let i=1; i<=number; i++){
+        if(number%i==0){
+
             factor++
         }
     }
@@ -13,7 +14,11 @@ function primecheck(num){
 }
 
 let answer = primecheck(7);
- if(answer==2){
- console.log("prime")
-}else{
-console.log("not prime")
+if(answer==true){
+  console.log("prime")
+}
+else{
+  console.log("Not prime")
+}
+
+
